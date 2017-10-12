@@ -26,6 +26,8 @@ public class HivoltsFrame extends Main implements KeyListener{
 	public void keyPressed(KeyEvent e) {
 		if (lifeStatus == false && e.getKeyCode()) {
     			// restart the game when lost
+			stop();
+			start();
 		}
 	    if (e.getKeyCode() == KeyEvent.VK_D ) {
 	    		// D key code
